@@ -13,4 +13,18 @@
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <sonar.host.url>
+                    http://192.168.8.180
+                </sonar.host.url>
+            </properties>
+        </profile>
+    </profiles>
+
 </project>
